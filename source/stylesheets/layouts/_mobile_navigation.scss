@@ -1,0 +1,55 @@
+.mobile-nav {
+  background: $oh-blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0vw;
+  min-height: 100%;
+  overflow: hidden;
+  padding-top: 4rem;
+
+  ul {
+    text-align: center;
+
+    li {
+      opacity: 0;
+      margin-bottom: 3rem;
+      margin-left: -12rem;
+
+      a {
+        color: $white;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.main-header__navigation--mobile {
+  display: none;
+
+  span {
+    display: block;
+    border-top: solid .4rem $white;
+    width: 3rem;
+    height: .8rem;
+    transition: .6s ease-out;
+  }
+
+  &:hover { cursor: pointer; }
+
+  span.animate-close {
+    &:first-child {
+      transform: rotate(45deg);
+      position: relative;
+    }
+
+    &:last-child { opacity: 0; }
+
+    &:nth-child(2) {
+      position: relative;
+      top: -.8rem;
+      right: -.2rem;
+      transform: rotate(-45deg);
+    }
+  }
+}

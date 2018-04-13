@@ -1,0 +1,106 @@
+@media only screen and (max-width: 920px) { 
+  div.main-header__navigation--mobile {
+    display: block !important;
+  }
+
+  header {
+    div.grid-container div.main-header {
+      &__logo { grid-column: span 7; }
+
+      &__navigation { 
+        grid-column: span 1;
+        ul { display: none; }
+      }
+
+      &__content { grid-column: span 8; }
+      
+      &__content-link { background: none; }
+    }
+  }
+
+  div.process-main-container {
+    div.process-graphic-container {
+      justify-content: center;
+    }
+
+    div.agile-graphic-container {
+      grid-row: 4;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &__nav {
+      border-bottom: solid $white 1px;
+
+      &:hover { cursor: pointer; }
+
+      &:hover strong::after {
+        transition: .5s ease-out;
+        transform: rotate(540deg);
+      }
+
+      strong {
+        &::after {
+          font-family: "FontAwesome";
+          content: '\f078';
+          display: inline-block;
+          float: right;
+        }
+      }
+
+      ul {
+        height: 0;
+        overflow: hidden;
+      }
+    }
+
+    &__contact-us {
+      form {
+        input { width: 78% !important; }
+        .submit-btn { width: 18% !important; }
+      }
+    }
+
+    &__map { grid-row: 3; }
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  div.grid-container {
+
+    [class^='puzzle-pieces-graphic'] {
+      min-height: 170px !important;
+    }
+
+    .puzzle-piece-graphic { 
+      justify-content: start;
+      grid-column: span 8; 
+    }
+
+    .tdd-container { background: #D3ECFB; }
+    .pp-container { background: #FBD7D3; }
+    .pr-container { background: #E8F8FF; }
+    .ci-container { background: #FEEDDE; }
+  }
+
+  footer .footer {
+    padding: 5rem 5rem;
+
+    .footer-map { grid-row: 3; }
+  }
+}
+
+@media only screen and (max-width: 465px) {
+
+  div.main-header,
+  div.subpage-navigation { 
+    padding: 1.8rem 2rem !important;
+  }
+
+  footer .footer {
+    padding: 5rem 3rem;
+
+    .footer-map { grid-row: 3; }
+  }
+}

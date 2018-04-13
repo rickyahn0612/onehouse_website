@@ -1,0 +1,66 @@
+---
+  title: Hello
+  active_nav: about
+---
+
+.grid-container.process-main-container
+  .col-lg-4.col-md-8
+    %h1 Process
+    %p
+      Ultimately, our process is about saving money. Requirments and priorities are constantly changing. We try to avoid unecessary planning and development by working to keep people on the same page with a system of tight feedback loops. We implement an iterative workflow where we make small, incremental improvements to a system, allowing its functionality to build organically over time.
+  .col-lg-4.col-md-8.process-graphic-container
+    .process-graphic
+  .col-lg-4.col-md-8.agile-graphic-container
+    .agile-graphic
+  .col-lg-4.col-md-8
+    %h1 Mostly Agile and a Little Extreme
+    %p
+      The process we follow is loosely based on Agile development with some pieces of Extreme programming thrown in. For ongoing projects, we break our work down into a series of small iterations, usually 1-2 weeks long. Each iteration begins with a planning meeting where upcoming work is further broken down into small chunks and then prioritised.
+    %br
+    %p
+      During the iterations we do quick, daily check-in meetings with the team to see how everyone's work is going. Then we usually wrap up our iterations with a retrospective meeting where the team talks about what worked and what didn't during the interation.
+
+.grid-container.process-main-container
+  .col-lg-8
+    %h1 Pieces of the Puzzle
+  .puzzle-piece-graphic.tdd-container.col-lg-1.col-sm-8
+    .puzzle-pieces-graphic-tdd
+  .col-lg-6.col-sm-8
+    %h1 Test Driven Development
+    %p
+      %strong
+        %i
+          "Testing saves your bacon". - Yahuda Katz
+      %br
+      Developing a high quality, automated test suite is an essential part of building a maintainable application. It's like climbing with ropes. It just makes sense. Most of the code we write is test driven, meaning we follow a process of writing tests first, then we follow with implementation code that satisfies the tests. This approach generally has a positive effect on the quality of the code and the resulting test suite.
+  .clear
+  .puzzle-piece-graphic.pp-container.col-lg-1.col-sm-8
+    .puzzle-pieces-graphic-pp
+  .col-lg-6.col-sm-8
+    %h1 Pair Programming
+    %p
+      %strong
+        %i
+          "15% slower, 15% fewer defects" - Neal Ford
+      %br
+      Pair programming yields better results. While moving slower costs money, it's an investment. The improvment in code quality can pay dividends down the road. That said, some companies go overboard with pairing and apply it to every task at hand. In our oppinion this doesn't always make sense. We generally pair on hard, important problems, and we solo on other, easier tasks.
+
+  .clear
+  .puzzle-piece-graphic.pr-container.col-lg-1.col-sm-8
+    .puzzle-pieces-graphic-pr
+  .col-lg-6.col-sm-8
+    %h1 Peer Review
+    %p
+      Peer review is an important part of our process. The code we write is generally reviewed by another team member and given the thumbs up (or some form of :shipit: emojie) before adding to the production codebase. This generally results in higher quality code, and it helps keep other poeple on the team up to speed with the code being added to the system.
+
+  .clear
+  .puzzle-piece-graphic.ci-container.col-lg-1.col-sm-8
+    .puzzle-pieces-graphic-ci
+  .col-lg-6.col-sm-8
+    %h1 Continuous Integration
+    %p
+      %strong
+        %i
+          "Projects with Continuous Integration tend to have dramatically less bugs" - Martin Fowler
+      %br
+      The more developers on a project the more important this becomes. Continuous integration is the process of continuously merging together new code being written by people on the team. The faster you can integrate code the more quickly you can root out potential problems before they snowball.

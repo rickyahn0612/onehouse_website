@@ -1,0 +1,6 @@
+@mixin medium_svg($img, $width, $height) {
+  min-width: $width;
+  min-height: $height;
+  background: url($img);
+  background-repeat: no-repeat;
+}

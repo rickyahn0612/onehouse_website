@@ -1,0 +1,30 @@
+@import 'variables';
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+}
+
+.main-container {
+  padding: 3rem;
+}
+
+li:last-child {
+  margin: 0;
+}
+
+div.no-margin {
+  margin: 0 !important;
+}

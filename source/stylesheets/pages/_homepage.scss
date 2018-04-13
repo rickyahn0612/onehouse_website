@@ -1,0 +1,64 @@
+.hompage-about-us {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+
+  .clip-board-svg {
+    opacity: 0;
+    @include medium_svg($icon-workflow, 140px, 144px);
+    background-size: 12rem;
+  }
+
+  .snowflake-svg {
+    opacity: 0;
+    @include medium_svg($icon-snowflake, 140px, 144px);
+    background-size: 12rem;
+  }
+}
+
+.portfolio-highlight {
+
+  h2.homepage-port-header {
+    text-align: center;
+    opacity: 0;
+  }
+
+  .screenshot-container {
+    position: relative;
+    
+    img {
+      width: 60%;
+      box-shadow: -10px 0 20px 1px $dark-grey;
+    }
+
+    .screenshot-front-image {
+      float: right;
+      z-index: 1;
+    }
+
+    .screenshot-back-image {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+.cta-container {
+  h2 { margin-bottom: 2rem; }
+
+  &__sec1 { grid-column: 2 / 4; }
+
+  &__sec2 {
+    grid-column: 5 / 7;
+    position: relative;
+
+    &::before {
+      content: ' ';
+      display: inline-block;
+      position: absolute;
+      border-left: solid $light-grey 1px;
+      left: -35%;
+      height: 100%;
+    }
+  }
+}

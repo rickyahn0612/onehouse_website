@@ -1,0 +1,54 @@
+---
+  title: Homepage
+  active_nav: about
+---
+
+.hero-container
+  = partial 'main-header'
+.grid-container.hompage-about-us
+  .col-lg-4.col-md-8
+    %h2.homepage-about-us-header
+      %strong
+        Working With Us.  
+      %span.ligthen-grey-font
+        We’re a small team. We only take on one or two projects at the same time, ensuring that your app will get the personal attention and focus it needs.
+  .col-lg-4.col-md-5.svg-box
+    .clip-board-svg.svg
+  .col-lg-4.col-md-8
+    %h2.homepage-about-us-header
+      %strong
+        Every project is a snowflake. 
+      %span.ligthen-grey-font
+        We tailor our workflow to the needs of the project. We can follow a more traditional scrum or agile workflow, or we can pick and choose just the right amount of process ot the get the job done.
+  .col-lg-4.col-md-5.svg-box
+    .snowflake-svg.svg
+%hr
+.grid-container.portfolio-highlight
+  .col-lg-8
+    %h2.homepage-port-header
+      %strong
+        ACADIA is an association of researchers
+      %span.ligthen-grey-font
+        and professionals interested in using computer aided design in architecture.  They wanted a custom content managent system developed and maintained by a professional company.
+  .col-lg-8
+    .screenshot-container
+      = image_tag 'screenshot_acadia_homepage.jpg', class: 'screenshot-front-image'
+      = image_tag 'screenshot_acadia_people_admin.jpg', class: 'screenshot-back-image' 
+%hr
+.grid-container.cta-container.padded
+  .col-lg-4.col-md-8
+    %h2
+      %strong
+        View our entire portfolio
+    %h2
+      %span.ligthen-grey-font
+        We tailor our workflow to the needs of the project. We can follow a more traditional scrum or agile.
+    = link_to 'View Our Work', '', class: 'default-hyper-link'
+  .col-lg-4.col-md-8
+    %h2
+      %strong
+        Learn more about our process
+    %h2
+      %span.ligthen-grey-font
+        We tailor our workflow to the needs of the project. We can follow a more traditional scrum.
+    = link_to 'Learn About Our Process', '', class: 'default-hyper-link'
