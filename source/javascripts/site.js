@@ -26,13 +26,16 @@ $(document).ready(function() {
 
     var firstFn = function() {
       animateFooterNav("170px");
-      $(this)
-        .find("strong")
-        .addClass("animate-carrot");
+      $(".footer__nav")
+        .removeClass("footer__hover--animation-down")
+        .addClass("footer__hover--animation-up");
     };
 
     var secondFn = function() {
       animateFooterNav("0");
+      $(".footer__nav")
+        .removeClass("footer__hover--animation-up")
+        .addClass("footer__hover--animation-down");
     };
 
     if (isSelected != "true") {

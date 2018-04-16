@@ -45,6 +45,16 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 3.4rem;
+
+  .ligthen-grey-font {
+    color: lighten($dark-grey, 10%);
+  }
+}
+
 i { color: $orange; }
 
 p {

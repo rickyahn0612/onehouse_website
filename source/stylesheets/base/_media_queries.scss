@@ -35,11 +35,6 @@
 
       &:hover { cursor: pointer; }
 
-      &:hover strong::after {
-        transition: .5s ease-out;
-        transform: rotate(540deg);
-      }
-
       strong {
         &::after {
           font-family: "FontAwesome";
@@ -54,6 +49,21 @@
         overflow: hidden;
       }
     }
+
+    .footer__hover--animation-up {
+      strong::after {
+        transition: .5s ease-out;
+        transform: rotate(540deg);
+      }
+    }
+
+    .footer__hover--animation-down {
+      strong::after {
+        transition: .5s ease-out;
+        transform: rotate(0deg);
+      }
+    }
+
 
     &__contact-us {
       form {
