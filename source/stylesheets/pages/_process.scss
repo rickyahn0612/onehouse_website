@@ -7,7 +7,7 @@ div.process-main-container {
 
     .process-graphic {
       @include medium_svg($process-graph, 32rem, 34rem);
-      background-size: 27rem;
+      background-size: 32rem;
     }
   }
 
