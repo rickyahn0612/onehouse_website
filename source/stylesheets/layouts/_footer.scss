@@ -31,6 +31,15 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 35rem;
+    transform: scale(1);
+    overflow: hidden;
+    transition: 3s ease-in-out;
+
+    &:hover {
+      opacity: .6;
+      transform: scale(2.4);
+
+    }
   }
   
   &__contact-us {

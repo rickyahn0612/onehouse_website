@@ -4,7 +4,9 @@
       .col-lg-1.col-md-8.footer__nav
         %strong ONEHOUSE
         = partial 'navigation_links'
-      .col-lg-6.col-md-8.footer__map
+      .col-lg-6.col-md-8{style: 'overflow: hidden'}
+        = link_to 'https://www.google.com/maps/place/2325+3rd+St,+San+Francisco,+CA+94107/@37.7602762,-122.3902864,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fb9b381ba2d:0xd200469ba9690286!8m2!3d37.760272!4d-122.3880977' do 
+          .footer__map
       .col-span-1.col-md-8.footer__contact-us
         %strong CONTACT US TODAY!
         %p 
@@ -12,4 +14,3 @@
         %form
           %input
           = link_to 'Submit', '#!', class: 'submit-btn'
-
