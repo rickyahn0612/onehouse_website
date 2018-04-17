@@ -4,3 +4,19 @@
   background: url($img);
   background-repeat: no-repeat;
 }
+
+@mixin services_box($color, $icon-color, $icon) {
+  padding: 30px;
+  background: linear-gradient($color, darken($color, 10%));
+  height: 200px;
+  text-align: center;
+
+  &::after {
+    font-family: "FontAwesome";
+    font-size: 110px;
+    color: $white;
+    opacity: 0.4;
+    content: $icon;
+    display: inline-block;
+  }
+}

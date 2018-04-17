@@ -82,7 +82,7 @@ $(document).on("scroll", function() {
   var homepagePortHeader = ".homepage-port-header";
   var frontScreenShotImage = ".screenshot-front-image";
   var backScreenShotImage = ".screenshot-back-image";
-  var gridContainerSec4 = ".screenshot-container";
+  var homepageScreenshot = ".portfolio-highlight";
   var animateFadeInTop = "animate-fade-in-top";
   var animateFadeInTopDelay = "animate-fade-in-top-delay";
   var animateFadeInBottom = "animate-fade-in-bottom";
@@ -98,17 +98,12 @@ $(document).on("scroll", function() {
       }
     });
 
-  if ($(gridContainerSec4).visible(true)) {
+  if ($(homepageScreenshot).visible(true)) {
     $(homepagePortHeader).addClass(animateFadeInBottom);
     $(frontScreenShotImage).addClass(animateFadeInTop);
     setTimeout(function() {
       $(backScreenShotImage).addClass(animateFadeInTop);
-    }, 200);
-    $(this)
-      .delay(200)
-      .queue(function() {
-        $(backScreenShotImage).addClass(animateFadeInTop);
-      });
+    }, 500);
   } else {
     $(homepagePortHeader).removeClass(animateFadeInBottom);
     $(frontScreenShotImage).removeClass(animateFadeInTop);

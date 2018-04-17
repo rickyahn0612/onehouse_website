@@ -2,9 +2,6 @@ div.process-main-container {
   display: grid;
 
   .process-graphic-container {
-    display: grid;
-    justify-content: end;
-
     .process-graphic {
       @include medium_svg($process-graph, 32rem, 34rem);
       background-size: 32rem;
@@ -12,9 +9,6 @@ div.process-main-container {
   }
 
   .agile-graphic-container {
-    display: grid;
-    justify-content: start;
-
     .agile-graphic {
       @include medium_svg($agile-xp, 270px, 320px);
       background-size: 27rem;
@@ -25,24 +19,11 @@ div.process-main-container {
     background-size: 17rem !important;
   }
 
-  .puzzle-piece-graphic {
-    display: grid;
-    justify-content: center;
-  }
+  .puzzle-pieces-graphic-tdd { @include medium_svg($puzzle-piece-tdd, 170px, 200px); }
 
-  .puzzle-pieces-graphic-tdd {
-    @include medium_svg($puzzle-piece-tdd, 170px, 200px);
-  }
+  .puzzle-pieces-graphic-pp { @include medium_svg($puzzle-piece-pp, 170px, 200px); }
 
-  .puzzle-pieces-graphic-pp {
-    @include medium_svg($puzzle-piece-pp, 170px, 200px);
-  }
+  .puzzle-pieces-graphic-pr { @include medium_svg($puzzle-piece-pr, 170px, 200px); }
 
-  .puzzle-pieces-graphic-pr {
-    @include medium_svg($puzzle-piece-pr, 170px, 200px);
-  }
-
-  .puzzle-pieces-graphic-ci {
-    @include medium_svg($puzzle-piece-ci, 170px, 200px);
-  }
+  .puzzle-pieces-graphic-ci { @include medium_svg($puzzle-piece-ci, 170px, 200px); }
 }

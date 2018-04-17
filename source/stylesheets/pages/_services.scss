@@ -1,0 +1,55 @@
+.services-container {
+  .services-ico {
+    &::after {
+      font-family: "FontAwesome";
+      content: '\f085';
+      font-size: 230px;
+      color: #73A9E2;
+    }
+  }
+
+  .card { 
+    box-shadow: 0 2px 20px -2px #cfcfcf;
+    border: solid #cfcfcf 1px;
+    transition: .6s ease-out;
+
+    &:hover {
+      box-shadow: 0px 10px 40px 10px #cfcfcf;
+    }
+
+    &:hover > [class^="card__header"]:after {
+      opacity: 1;
+      transition: 1s ease-out;
+    }
+
+    &__header {
+      transition: 2s ease-out;
+      @include services_box(#e79e45, #e79e45, '\f0eb');
+    }
+
+    &__header--blue {
+      @include services_box(#79A7EF, #79A7EF, '\f040');
+    }
+
+    &__header--yellow {
+      @include services_box(#F2D85C, #F2D85C, '\f247');
+    }
+
+    &__header--purple {
+      @include services_box(#E8CAF7, #E8CAF7, '\f01e');
+    }
+
+    &__body {
+      padding: 30px;
+    }
+  }
+}
+
+img.custom-cms { 
+  box-shadow: 0 5px 20px 5px #cfcfcf;
+  max-width: 600px; 
+  float: right;
+}
+
+
+

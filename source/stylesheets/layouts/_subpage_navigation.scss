@@ -1,15 +1,12 @@
 .subpage-navigation {
   background: rgba($oh-blue, .9);
   clip-path: polygon(0 0, 100% 0, 150% 120%, 70% 80%, 0 100%);
-  padding: 1.8rem 5rem;
   height: 8rem;
+  padding-top: 2rem;
+
+  .row { display: grid; }
 
   .main-header__logo {
     height: 2.8rem;
-  }
-
-  .main-header__navigation {
-    position: relative;
-    top: -3rem;
   }
 }

@@ -1,14 +1,15 @@
 %footer
-  .grid-container.footer.no-margin
-    .col-lg-2.col-md-8.footer__nav
-      %strong ONEHOUSE
-      = partial 'navigation_links'
-    .col-lg-5.col-md-8.footer__map
-    .col-span-1.col-md-8.footer__contact-us
-      %strong CONTACT US TODAY!
-      %p 
-        We tailor our workflow to the needs of the project amount of process ot the get the job done. 
-      %form
-        %input
-        = link_to 'Submit', '#!', class: 'submit-btn'
+  .footer
+    .grid-container
+      .col-lg-1.col-md-8.footer__nav
+        %strong ONEHOUSE
+        = partial 'navigation_links'
+      .col-lg-6.col-md-8.footer__map
+      .col-span-1.col-md-8.footer__contact-us
+        %strong CONTACT US TODAY!
+        %p 
+          We tailor our workflow to the needs of the project amount of process ot the get the job done. 
+        %form
+          %input
+          = link_to 'Submit', '#!', class: 'submit-btn'
 

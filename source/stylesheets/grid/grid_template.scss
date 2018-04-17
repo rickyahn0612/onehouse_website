@@ -2,12 +2,33 @@ div.no-margin {
   margin: 0;
 }
 
+div.no-top-padding {
+  padding-top: 0 !important;
+}
+
+.offset-center {
+  display: grid;
+  justify-items: center;
+}
+
+.offset-end {
+  display: grid;
+  justify-items: end;
+}
+
+.offset-start {
+  display: grid;
+  justify-items: start;
+}
+
 .grid-container {
-  margin: 5rem 15rem;
+  max-width: 150.5rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: min-max(100px, auto);
   grid-gap: 4rem;
+  padding: 5rem 10rem;
 
   .col-lg-1 { grid-column: span 1 }
   .col-lg-2 { grid-column: span 2 }
@@ -17,13 +38,10 @@ div.no-margin {
   .col-lg-6 { grid-column: span 6 }
   .col-lg-7 { grid-column: span 7 }
   .col-lg-8 { grid-column: span 8 }
-
 }
 
 @media only screen and (max-width: 920px) {  
   div.grid-container {
-    margin: 5rem 5rem;
-
     .col-md-5 { grid-column: span 5; }
     .col-md-7 { grid-column: span 7; }
     .col-md-8 { grid-column: span 8; }
@@ -40,6 +58,7 @@ div.no-margin {
 
 @media only screen and (max-width: 465px) {
   div.grid-container {
+    padding: 5rem 1rem;
     margin: 3rem 2.4rem;
   }
 }
