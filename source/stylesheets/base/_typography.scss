@@ -64,3 +64,12 @@ p {
   font-size: 1.7rem;
   font-weight: 400;
 }
+
+h2.fancy-header {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  span {
+    color: lighten($dark-grey, 10%);
+  }
+}

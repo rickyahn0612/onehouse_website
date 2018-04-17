@@ -1,4 +1,7 @@
 .services-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr) !important;
+
   .services-ico {
     &::after {
       font-family: "FontAwesome";
@@ -28,7 +31,7 @@
     }
 
     &__header--blue {
-      @include services_box(#79A7EF, #79A7EF, '\f040');
+      @include services_box(#79A7EF, #79A7EF, '\f0db');
     }
 
     &__header--yellow {
@@ -39,17 +42,57 @@
       @include services_box(#E8CAF7, #E8CAF7, '\f01e');
     }
 
+    &__header--green {
+      @include services_box(#8bc246, #8bc246, '\f201');
+    }
+
+    &__header--red {
+      @include services_box(#DE5477, #DE5477, '\f044');
+    }
+
     &__body {
       padding: 30px;
     }
   }
 }
 
-img.custom-cms { 
-  box-shadow: 0 5px 20px 5px #cfcfcf;
-  max-width: 600px; 
-  float: right;
+.dashboard-container {
+  .dashboard-ico {
+    @include font_awesome_ico('\F0E4', #6D8CDF, 70px);
+  }
+
+  .animate-move-up-container {
+    background: linear-gradient(rgb(243, 242, 245), rgb(212, 208, 228)); 
+    overflow: hidden;
+
+    h2 {
+      margin-bottom: 10px;
+
+      span {
+        color: $dark-bg;
+      }
+    }
+
+    .screenshot-container img { width: 80% !important; }
+  }
+
 }
 
+.other-services {
+  .cms-icon {
+    @include font_awesome_ico('\f044', #79A7EF, 200px);
+  }
 
+  .business-icon {
+    @include font_awesome_ico('\f201', #F2D85C, 200px);
+  }
+}
 
+.technologies {
+  .grid-container {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  img { width: 70%; }
+}

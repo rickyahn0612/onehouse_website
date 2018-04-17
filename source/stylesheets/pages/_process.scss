@@ -1,14 +1,9 @@
 div.process-main-container {
   display: grid;
 
-  .process-graphic-container {
-    .process-graphic {
-      @include medium_svg($process-graph, 32rem, 34rem);
-      background-size: 32rem;
-    }
-  }
-
   .agile-graphic-container {
+    align-items: center;
+
     .agile-graphic {
       @include medium_svg($agile-xp, 270px, 320px);
       background-size: 27rem;
@@ -26,4 +21,65 @@ div.process-main-container {
   .puzzle-pieces-graphic-pr { @include medium_svg($puzzle-piece-pr, 170px, 200px); }
 
   .puzzle-pieces-graphic-ci { @include medium_svg($puzzle-piece-ci, 170px, 200px); }
+}
+
+.money-process-container {
+  overflow: hidden;
+  position: relative;
+  color: $white;
+  background: linear-gradient($dark-bg, #28264e);
+
+  .money-ico {
+    @include make_it_rain(10px, 0, 0);
+  }
+
+  .money-ico-2 {
+    @include make_it_rain(140px, 3s, 10deg);
+  }
+
+  .money-ico-3 {
+    @include make_it_rain(200px, 10s, 40deg);
+  }
+
+  .money-ico-4 {
+    @include make_it_rain(350px, .2s, 190deg);
+  }
+
+  .money-ico-5 {
+    @include make_it_rain(440px, 6s, 50deg);
+  }
+
+  .money-ico-6 {
+    @include make_it_rain(490px, 8s, 10deg);
+  }
+
+  .money-ico-7 {
+    @include make_it_rain(690px, .9s, 90deg);
+  }
+
+  .money-ico-8 {
+    @include make_it_rain(820px, .1s, 43deg);
+  }
+
+  .money-ico-9 {
+    @include make_it_rain(920px, 5s, 13deg);
+  }
+
+  .money-ico-10 {
+    @include make_it_rain(1420px, .6s, 203deg);
+  }
+
+  .money-ico-11 {
+    @include make_it_rain(1620px, 10s, 55deg);
+  }
+
+  .process-graphic-container {
+    .process-graphic {
+      @include medium_svg($process-graph, 32rem, 28rem);
+      background-size: 28rem;
+    }
+  }
+
+
+  p { color: $light-grey; }
 }

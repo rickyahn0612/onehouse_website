@@ -20,3 +20,28 @@
     display: inline-block;
   }
 }
+
+@mixin make_it_rain($left, $delay, $rotate) {
+  position: absolute;
+  top: -50px;
+  left: $left;
+  animation: floatUp 15s ease-out infinite;
+  animation-delay: $delay;
+  transform: rotate($rotate);
+
+  &::after {
+    font-family: "FontAwesome";
+    content: '\f0d6';
+    font-size: 40px;
+    opacity: .1;
+  }
+}
+
+@mixin font_awesome_ico($ico-name, $color, $font-size) {
+  &::after {
+    font-family: "FontAwesome";
+    content: $ico-name;
+    font-size: $font-size;
+    color: $color;
+  }
+}

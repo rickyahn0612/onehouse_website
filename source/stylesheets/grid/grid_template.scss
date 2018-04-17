@@ -42,6 +42,7 @@ div.no-top-padding {
 
 @media only screen and (max-width: 920px) {  
   div.grid-container {
+    .col-md-2 { grid-column: span 2; }
     .col-md-5 { grid-column: span 5; }
     .col-md-7 { grid-column: span 7; }
     .col-md-8 { grid-column: span 8; }
@@ -50,9 +51,18 @@ div.no-top-padding {
 
 @media only screen and (max-width: 797px) {
   div.grid-container {
+    .col-sm-2 {
+      grid-column: span 2 !important;
+    }
+
     .col-sm-8 {
       grid-column: span 8 !important;
     }
+
+    .col-sm-9 {
+      grid-column: span 9 !important;
+    }
+
   }
 }
 
